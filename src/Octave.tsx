@@ -8,7 +8,8 @@ type Props = {
 const Octave: React.FC<Props> = ({ notes }) => (
     <div>
         {notes.map((element: NoteType) => (
-            <Notas />
+            <Notas 
+            key={element.note}/>
         ))}
     </div>
 )
