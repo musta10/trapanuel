@@ -1,12 +1,12 @@
 import React from 'react';
+import { notes }  from './helpers'
+import Octave from './Octave'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-     
-      </header>
+    <div>
+      <Octave notes={notes} />
     </div>
   );
 }
