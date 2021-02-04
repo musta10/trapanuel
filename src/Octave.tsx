@@ -9,7 +9,9 @@ const Octave: React.FC<Props> = ({ notes }) => (
     <div>
         {notes.map((element: NoteType) => (
             <Notas 
-            key={element.note}/>
+            key={element.note}
+            color={element.color}
+            note={element.note} />
         ))}
     </div>
 )
